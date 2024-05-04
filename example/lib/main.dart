@@ -99,6 +99,7 @@ class _FlagItem extends StatelessWidget {
 }
 
 const List<String> _countryCodes = [
+  'sch',
   'af',
   'al',
   'dz',

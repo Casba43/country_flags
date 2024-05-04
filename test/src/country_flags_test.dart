@@ -9,7 +9,7 @@ void main() {
     const svgFlagKey = Key('svgFlag');
 
     group('fromLanguageCode constructor', () {
-      const validLanguageCode = 'es';
+      const validLanguageCode = 'sch';
       const invalidLanguageCode = 'zz';
 
       test('can be instantiated', () {
@@ -22,8 +22,7 @@ void main() {
         expect(find.byKey(svgFlagKey), findsOneWidget);
       });
 
-      testWidgets('renders the flag widget with a circle shape',
-          (tester) async {
+      testWidgets('renders the flag widget with a circle shape', (tester) async {
         await tester.pumpApp(
           CountryFlag.fromLanguageCode(
             validLanguageCode,
@@ -45,7 +44,7 @@ void main() {
     });
 
     group('fromCountryCode constructor', () {
-      const validCountryCode = 'ES';
+      const validCountryCode = 'sch';
       const invalidCountryCode = 'ZZ';
 
       test('can be instantiated', () {
@@ -58,8 +57,7 @@ void main() {
         expect(find.byKey(svgFlagKey), findsOneWidget);
       });
 
-      testWidgets('renders the flag widget with a circle shape',
-          (tester) async {
+      testWidgets('renders the flag widget with a circle shape', (tester) async {
         await tester.pumpApp(
           CountryFlag.fromCountryCode(
             validCountryCode,
