@@ -6,6 +6,7 @@ import 'package:collection/collection.dart';
 /// {@endtemplate}
 class FlagCode {
   static const Map<String, String> _flagCodesCountries = {
+    'sch': 'SCH',
     'ad': 'AD',
     'ae': 'AE',
     'af': 'AF',
@@ -348,16 +349,10 @@ class FlagCode {
   ///
   /// Source of the language codes:
   /// http://www.lingoes.net/en/translator/langcode.htm
-  static String? fromLanguageCode(String languageCode) =>
-      _flagCodesLanguages.entries
-          .singleWhereOrNull((entry) => entry.value == languageCode)
-          ?.key;
+  static String? fromLanguageCode(String languageCode) => _flagCodesLanguages.entries.singleWhereOrNull((entry) => entry.value == languageCode)?.key;
 
   /// Get the flag code from a country code.
   ///
   /// Returns `null` if the country code is not found.
-  static String? fromCountryCode(String countryCode) =>
-      _flagCodesCountries.entries
-          .singleWhereOrNull((entry) => entry.value == countryCode)
-          ?.key;
+  static String? fromCountryCode(String countryCode) => _flagCodesCountries.entries.singleWhereOrNull((entry) => entry.value == countryCode)?.key;
 }
