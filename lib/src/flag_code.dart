@@ -6,7 +6,7 @@ import 'package:collection/collection.dart';
 /// {@endtemplate}
 class FlagCode {
   static const Map<String, String> _flagCodesCountries = {
-    'sch': 'SCH',
+    'sch': 'sch',
     'ad': 'AD',
     'ae': 'AE',
     'af': 'AF',
